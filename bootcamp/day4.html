@@ -1,0 +1,190 @@
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    * {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("https://datacenternews.asia/uploads/story/2021/05/18/GettyImages-1150892749.webp");
+        background-size: contain;
+    }
+
+    .container {
+        position: relative;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .container .card {
+        position: relative;
+        width: 320px;
+        height: 450px;
+        background: #13131350;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    .container .card:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgb(40, 140, 255);
+        clip-path: circle(150px at 80% 20%);
+        transition: 0.5s ease-in-out;
+    }
+
+    .container .card:hover:before {
+        clip-path: circle(300px at 80% -20%);
+    }
+
+    .container .card:after {
+        content: 'STS';
+        position: absolute;
+        top: 30%;
+        left: -20%;
+        font-size: 12em;
+        font-weight: 800;
+        font-style: italic;
+        color: rgba(18, 129, 255, 0.248)
+    }
+
+    .container .card .imgBx {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10000;
+        width: 100%;
+        height: 220px;
+        transition: 0.5s;
+        border-radius: 20px;
+    }
+
+    .container .card:hover .imgBx {
+        top: 0%;
+        transform: translateY(0%);
+
+    }
+
+    .container .card .imgBx img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-25deg);
+        width: 270px;
+        border-radius: 20px;
+    }
+
+    .container .card .contentBx {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 100px;
+        text-align: center;
+        transition: 1s;
+        z-index: 10;
+    }
+
+    .container .card:hover .contentBx {
+        height: 210px;
+    }
+
+    .container .card .contentBx h2 {
+        position: relative;
+        font-weight: 600;
+        letter-spacing: 1px;
+        color: #fff;
+        margin: 0;
+    }
+
+    .container .card .contentBx .size {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 8px 20px;
+        transition: 0.5s;
+        opacity: 0;
+        visibility: hidden;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .container .card:hover .contentBx .size {
+        opacity: 1;
+        visibility: visible;
+        transition-delay: 0.5s;
+    }
+
+    /* 
+    .container .card .contentBx .size h3 {
+        color: #fff;
+        font-weight: 300;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-right: 10px;
+    } */
+
+    .container .card .contentBx .size h6 {
+        width: fit-content;
+        height: fit-content;
+        text-align: center;
+        line-height: 50px;
+        font-size: 10px;
+        display: inline;
+        color: #111;
+        background: #fff;
+        margin: 0 5px;
+        transition: 0.5s;
+        color: #111;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+
+    .container .card .contentBx .size h6:hover {
+        background: #065bc382;
+    }
+</style>
+<div class="container">
+    <div class="card">
+        <div class="imgBx">
+            <img src="https://bootcamp.sts.ro/wp-content/uploads/2022/08/c81e728d9d4c2f636f067f89cc14862c-scaled.jpg">
+        </div>
+        <div class="contentBx">
+            <h2>Data Center</h2>
+            <div class="size">
+                <h6>Servere</h6>
+                <h6>Coolere</h6>
+                <h6>Alimentatoare</h6>
+                <h6>Headache</h6>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="container">
+    <div class="card">
+        <div class="imgBx">
+            <img src="https://bootcamp.sts.ro/wp-content/uploads/2022/08/45c48cce2e2d7fbdea1afc51c7c6ad26-300x200.jpg">
+        </div>
+
+        <div class="contentBx">
+            <h2>Servicii de comunicatii</h2>
+            <div class="size">
+                <h6>Infrastructura</h6>
+                <h6>Configurare</h6>
+                <h6>Securitate</h6>
+            </div>
+        </div>
+
+    </div>
+</div>

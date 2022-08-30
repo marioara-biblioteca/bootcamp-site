@@ -1,0 +1,982 @@
+<!-- <style>
+    .column {
+        width: calc(33% - 30px);
+        padding: 0 15px;
+    }
+
+    .row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    @media screen and (max-width: 600px) {
+        .column {
+            width: 100%;
+            display: block;
+            margin-bottom: 20px;
+        }
+    }
+
+    .card {
+        background: papayawhip 0% 0% no-repeat padding-box;
+        border-radius: 20px;
+        opacity: 0.75;
+        overflow: hidden;
+    }
+
+    .card-title {
+        height: min-content;
+        text-align: center;
+        font: normal normal bold 63px/84px Segoe UI;
+        letter-spacing: 0px;
+        color: #4a4949;
+        opacity: 1;
+    }
+
+    .card-text {
+        text-align: center;
+        font: normal normal bold 24px/32px Segoe UI;
+        letter-spacing: 0px;
+        color: #4a4949;
+        opacity: 1;
+        padding: 5px;
+    }
+</style>
+<div class="row">
+    <div class="column">
+        <div class="card">
+            <h6 class="card-title">Teo</h6>
+            <img src="https://bootcamp.sts.ro/wp-content/uploads/2022/08/c3ada839dcc6246d20118b03e587deb2.jpg"
+                alt="teo">
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <h6 class="card-title">George</h6>
+            <img src="https://bootcamp.sts.ro/wp-content/uploads/2022/08/d3d9446802a44259755d38e6d163e820-scaled.jpg"
+                alt="george">
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <h6 class="card-title">Viki</h6>
+            <img src="https://bootcamp.sts.ro/wp-content/uploads/2022/08/e4da3b7fbbce2345d7772b0674a318d5-1-scaled.jpg"
+                alt="viki">
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="column">
+        <div class="card">
+            <h6 class="card-title">Catalin</h6>
+            <img src="https://bootcamp.sts.ro/wp-content/uploads/2022/08/fb50697c9fd4390ff36e6fa201775119.jpg"
+                alt="catalin">
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <h6 class="card-title">Andra</h6>
+            <img src="https://bootcamp.sts.ro/wp-content/uploads/2022/08/ea7a654b9b37e17aed01f7a476d88aa4-scaled.jpg"
+                alt="andra">
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <h6 class="card-title">Stefan</h6>
+            <img src="https://bootcamp.sts.ro/wp-content/uploads/2022/08/ff1b12125ed3caa37d56edf0639cbb6d.jpg"
+                alt="stefan">
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="column">
+        <div class="card">
+            <h6 class="card-title">Oana</h6>
+            <img src="https://bootcamp.sts.ro/wp-content/uploads/2022/08/024a6783291685f89ca762141bb18153-scaled.jpg"
+                alt="">
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <h6 class="card-title">Alex</h6>
+            <img src="https://bootcamp.sts.ro/wp-content/uploads/2022/08/544b1616fec84dc02c1adaee399c3306.jpg"
+                alt="alex">
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <h6 class="card-title">Bianca</h6>
+            <img src="https://bootcamp.sts.ro/wp-content/uploads/2022/08/024a6783291685f89ca762141bb18153-scaled.jpg"
+                alt="">
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="column">
+        <div class="card">
+            <h6 class="card-title">Radu1</h6>
+            <img src="https://bootcamp.sts.ro/wp-content/uploads/2022/08/cfcd208495d565ef66e7dff9f98764da-scaled.jpg"
+                alt="radu1">
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <h6 class="card-title">Radu2</h6>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsiXPKEBVHWaMbUEZlARnMlaPNdOHnSk-d_A&usqp=CAU"
+                alt="">
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <h6 class="card-title">Adelin</h6>
+            <img src="https://bootcamp.sts.ro/wp-content/uploads/2022/08/e4da3b7fbbce2345d7772b0674a318d5-scaled.jpg"
+                alt="adelin">
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <h6 class="card-title">Daniel</h6>
+                <img src="https://bootcamp.sts.ro/wp-content/uploads/2022/08/024a6783291685f89ca762141bb18153-scaled.jpg"
+                    alt="">
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <h6 class="card-title">Gabi</h6>
+                <img src="https://bootcamp.sts.ro/wp-content/uploads/2022/08/024a6783291685f89ca762141bb18153-scaled.jpg"
+                    alt="">
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <h6 class="card-title">Horia</h6>
+                <img src="https://bootcamp.sts.ro/wp-content/uploads/2022/08/b6b064a8a65c814165e664e4afb5dc01-scaled.jpg"
+                    alt="horia">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <h6 class="card-title">Sergiu</h6>
+                <img src="https://bootcamp.sts.ro/wp-content/uploads/2022/08/a69fcf6680bb538a1cd0255f1e9c8662.jpg"
+                    alt="sergiu">
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <h6 class="card-title">Andrei</h6>
+                <img src="https://bootcamp.sts.ro/wp-content/uploads/2022/08/edc84ed172b9a23b5e9901a3cc00cfd2-scaled.jpg"
+                    alt="andrei">
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <h6 class="card-title">Eu</h6>
+                <img src="https://bootcamp.sts.ro/wp-content/uploads/2022/08/1239ac832bc86b5b3f25a4f3fa2ae2a4.jpg"
+                    alt="eu">
+            </div>
+        </div>
+    </div>
+</div>  -->
+
+<!-- <style>
+    * {
+        box-sizing: border-box
+    }
+
+    body {
+        font-family: Verdana, sans-serif;
+        margin: 0
+    }
+
+    .mySlides {
+        display: none
+    }
+
+    img {
+        vertical-align: middle;
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+    }
+
+    /* Next & previous buttons */
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Caption text */
+    .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+        background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @keyframes fade {
+        from {
+            opacity: .4
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+
+        .prev,
+        .next,
+        .text {
+            font-size: 11px
+        }
+    }
+
+    img {
+        height: 500px;
+    }
+</style>
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+        <div class="numbertext">1 / 18</div>
+        <img src="https://lh3.googleusercontent.com/pw/AL9nZEVoViG2PtYcLhmCNyyaIbrPTEkG2sHmo8haxTRF5EInpiyE8ltooonFumurAdChR5GfSnJkuYfUAWm2cX2dOVGtSBVS4V8ooFETNFsEGWsdeP3J0Ho5rhP5rOfxo4G6sF5Bm4fmi-QRFav78sbv377k=w509-h949-no?authuser=0"
+            style="width:100%">
+        <div class="text">Bianca</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">2 / 18</div>
+        <img src="https://lh3.googleusercontent.com/pw/AL9nZEVPyPbFUl0Mhnisg2ibARYlRQFywTkGFdEhvegJxbHaxoD5livR0_OyXADkUBO92Q75W4pymhlPPWsahx2sQ9VJtQFlmWag8bSBnoQbHu0wgJQzmP0laWiNAnd2dDQvplo8GA55MVzqfpQnCVJ1C-p7=w509-h949-no?authuser=0"
+            style="width:100%">
+        <div class="text">Alex</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">3 / 18</div>
+        <img src="https://lh3.googleusercontent.com/pw/AL9nZEUN4DzAZhUmX_IxfuIzMuinJisyKJj1VVJVNkoDpmpnPESvdYurJD4M2ilK3crL1K2BA1OmvrMoZe5ZxR3m79oCdEExI6dv-hlYKcUzitVC8BlHJ7XOHFmFoLUXPnOqZFoHp-TzF4uCXky0QSmaNl3F=w509-h949-no?authuser=0"
+            style="width:100%">
+        <div class="text">Radu</div>
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 18</div>
+        <img src="https://lh3.googleusercontent.com/pw/AL9nZEXVSSd1AZQhI2yZABjy63b1Gh4RkAns7W8AEx_FUm9uo3tz4UJmMkimn-7RbiAhbwyyVDytK53unvCyRJ9-2Jef7pdkMeWvU7IAEihhzOcOSORnxsGF_oryxdNpBhnPlAvtPnGUuslMT2mAw9fT-rF7=w509-h949-no?authuser=0"
+            style="width:100%">
+        <div class="text">Adelin</div>
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">5 / 18</div>
+        <img src="https://lh3.googleusercontent.com/pw/AL9nZEWMnJVw0zqic7YTAhV9KzPij9TK8SxTRGBCFw6WWVZ7WdVKcqr2RS2hBupZT-kQoyvOhKNzwdY0MmyVLKoqnedm1YsqRm6Vxfq2kHO_s6b_DxtPSuXBJeGqOmejqBMvpYpyZ-ua670X-XCXO3ZYDaC7=w509-h949-no?authuser=0"
+            style="width:100%">
+        <div class="text">Andra</div>
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">6 / 18</div>
+        <img src="https://lh3.googleusercontent.com/pw/AL9nZEWcXY-oxSJQoRIPGukMi8fpheBOQr8rQj-jMBv46oubSyU4iuiIz43OEHOb8y9jO17BN7-rp8Z2bUCfJUTQVwMVgLiGs3KtzzXLo9ng_mlI0S-GSMIe9GMfIsuEBxZ6gnzSyQ7Wq2MHUcB4FGmTktOa=w509-h949-no?authuser=0"
+            style="width:100%">
+        <div class="text">George</div>
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">7 / 18</div>
+        <img src="https://lh3.googleusercontent.com/pw/AL9nZEU00BaD3K0IgNHZDZhuKV9LlJvqOLqcv4_WUk0qxlSS2shAmZUScTmKO91ABpJT8cUpEXXvugNfYk3AKoPlGp_Lc_113TWS1LjUvgNDIXwcXiDeqpY_tND-wM-AweqfaC2qZs5kf60i48r1xV4vrjLg=w509-h949-no?authuser=0"
+            style="width:100%">
+        <div class="text">Viki</div>
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">8 / 18</div>
+        <img src="https://lh3.googleusercontent.com/pw/AL9nZEXVJew8LFpxlgF9VjlHUImG33imSWQDqWWmytsDB1HKf3JA2QMz4U0tv8Lvpa85F--pgdZdYtnOEAHZd4VsU0yQCrEu6EqRWC5-ZiUJkJA8-dbJMCwmEOobVGGkPOTwbjJgVEgk9CyC_eZxWiHFACRi=w509-h949-no?authuser=0"
+            style="width:100%">
+        <div class="text">Gabi</div>
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">9 / 18</div>
+        <img src="https://lh3.googleusercontent.com/pw/AL9nZEWD58KWrBO5iXB0vWAkS-IvK4ZNR2eOWgCPqAV98_scnSx3GqxsJptPZszTrbl_5_dyETWimBPRacqwODyfNtYDHF4OYOIhXVryM31WI2mido8YwQUIxaiv7O8f1xz6xjp_nY42YMZ1gBei99cZZ_DY=w509-h949-no?authuser=0"
+            style="width:100%">
+        <div class="text">Teo</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">10 / 18</div>
+        <img src="https://lh3.googleusercontent.com/pw/AL9nZEX6q5TuLhWpqS3f8JU3Jq2djgrNh87sx_sxc7DoCDDUUhWLyvGUmYU_WWyZeuDVd4aqcb_7lPWZvXVEhjLqOTK4cVbIJpJOVWOKcwfEIOcFGF8WnK_2Hd6m_9kBaoIO51IxxEEOyWcsTYlOME6RLKj1=w509-h949-no?authuser=0"
+            style="width:100%">
+        <div class="text">Radu</div>
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">11 / 18</div>
+        <img src="https://lh3.googleusercontent.com/pw/AL9nZEXJEy1pOTYlUcUqHHN6_7SEWqzSayG-kpOeI9o0spo-JTNOpQwRet8vUsm_l1d7IWLwJTVvENQRzET9xCY1JlE9MFpjR3uQsKPprj-SRTZ3rFPA8OKeesxM9U1vVAZegxxASWRvY0fdakpIzpJZXsaO=w509-h949-no?authuser=0"
+            style="width:100%">
+        <div class="text">Catalin</div>
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">12 / 18</div>
+        <img src="https://lh3.googleusercontent.com/pw/AL9nZEUzECFA0vluBytpLvYgKwMPpIrpMmfiYYVAzAluoyCGffbffhT8uOu15wcJFiwgwI6aSfjHvJM1nyLGz10H4DoPt28R5uV-iAbG86eggNRUEwtjaqA2MUpia0oiAvGUGCC7aF0CYtUH_YbN4gO7ILOk=w509-h949-no?authuser=0"
+            style="width:100%">
+        <div class="text">Horia</div>
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">13 / 18</div>
+        <img src="https://lh3.googleusercontent.com/pw/AL9nZEVYqwj0Eo1gNn3EoNbhS3Objp5tJroTXzDxmydXIUbAX-HvGl5goBwEEz-bKxc99HSYlyMN7fhUFJ1c1wlLr5Ru7FCbxk_YTLRXXdcBC_HEYvndeFkWxtgupzbLFv3RMWYXfKnE_TCA1MPKZHjj-FaD=w509-h949-no?authuser=0"
+            style="width:100%">
+        <div class="text">The end</div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+    <span class="dot" onclick="currentSlide(7)"></span>
+    <span class="dot" onclick="currentSlide(8)"></span>
+    <span class="dot" onclick="currentSlide(9)"></span>
+    <span class="dot" onclick="currentSlide(10)"></span>
+    <span class="dot" onclick="currentSlide(11)"></span>
+    <span class="dot" onclick="currentSlide(12)"></span>
+    <span class="dot" onclick="currentSlide(13)"></span>
+
+</div>
+
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }
+</script> -->
+<!-- CHART
+
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+
+<script>
+    var xValues = [];
+    var yValues = [];
+    generateData("Math.exp(x)", 1, 10, 0.5);
+
+    new Chart("myChart", {
+        type: "line",
+        data: {
+            labels: xValues,
+            datasets: [{
+                fill: false,
+                pointRadius: 2,
+                borderColor: "rgba(0,0,255,0.5)",
+                data: yValues
+            }]
+        },
+        options: {
+            legend: { display: false },
+            title: {
+                display: true,
+                text: "y = a * exp(x) ",
+                fontSize: 16
+            }
+        }
+    });
+    function generateData(value, i1, i2, step = 1) {
+        for (let x = i1; x <= i2; x += step) {
+            yValues.push(eval(value));
+            xValues.push(x);
+        }
+    }
+</script> -->
+
+
+<!-- Parallel cards
+     <style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .column {
+        float: left;
+        width: 50%;
+        padding: 0 10px;
+    }
+
+    .row {
+        margin: 0 -5px;
+    }
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    @media screen and (max-width: 600px) {
+        .column {
+            width: 100%;
+            display: block;
+            margin-bottom: 20px;
+        }
+    }
+
+    .pov {
+        margin: 1em 0 0.5em 0;
+        font-weight: 300;
+        font-family: 'Titillium Web', sans-serif;
+        position: relative;
+        font-size: 20px;
+        line-height: 40px;
+        padding: 15px 15px 15px 15%;
+        color: #000000;
+        box-shadow:
+            inset 0 0 0 1px rgba(53, 86, 129, 0.4),
+            inset 0 0 5px rgba(53, 86, 129, 0.5),
+            inset -285px 0 35px white;
+        border-radius: 0 10px 0 10px;
+        background: #fff url("https://bootcamp.sts.ro/wp-content/uploads/2022/08/73710a0240125966faca4f283be06685.jpg") no-repeat center left;
+    }
+
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        padding: 16px;
+        text-align: center;
+        background-color: #f1f1f1;
+    }
+
+    .img {
+
+        width: 100%;
+    }
+</style>
+
+
+<p class="pov">Disclaimer: in comunicarea din reteaua noi-STS nu a existat niciun firewall care sa filtreze traficul de
+    date, ci s-a bazat pe sinceritate si incredere. Cu toate acestea,
+    pentru a preveni leak-uri nedorite de date de la acest site catre utilizatori malitiosi, un dispozitiv de acest tip
+    a fost instalat acum.
+</p>
+
+<div class="row">
+    <div class="column">
+        <div class="card">
+            <h3>Prezentare Centre: CORIS + NOC </h3>
+            <img class="img"
+                src="https://bootcamp.sts.ro/wp-content/uploads/2022/08/c0319c56bac568856881a350fac0a027.jpg" alt="">
+            <p>Flux de date STS -> noi</p>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <h3>Prezentare DMRU</h3>
+            <p>Flux de date noi -> STS</p>
+            <img class="img"
+                src="https://bootcamp.sts.ro/wp-content/uploads/2022/08/0ad4fab944bcd5607a7b9e67fdc3d1ca.jpg" alt="">
+        </div>
+    </div>
+
+</div> -->
+
+<!-- Tutorial animation
+<div class="btn">
+    <img class="background" src="https://image.shutterstock.com/shutterstock/photos/273318635/display_1500/stock-photo-instructions-how-to-make-paper-airplane-paper-plane-tutorial-step-by-step-airplane-educational-273318635.jpg" alt="">
+  </div>
+  
+  <style>
+    .background {
+      will-change: transform;
+      transition: transform 450ms;
+      height: 500px;
+      width: 400px;
+    }
+    
+    .btn:hover .background {
+      transition: transform 350ms;
+      transform: translate3d(42px, -62px, -135px);
+      
+    }
+    
+   
+    .btn {
+       outline: auto; 
+       height: 500px;
+       width: 400px;
+    }
+  </style> -->
+
+
+<!-- 
+  Carduri secventiale
+  <style>
+    @mixin media() {
+        @media (min-width: 768px) {
+            @content;
+        }
+    }
+
+    .siteTitle {
+        display: block;
+        font-weight: 900;
+        font-size: 30px;
+        margin: 20px 0;
+
+        @include media {
+            font-size: 60px;
+        }
+    }
+
+
+    .card {
+        height: 400px;
+        position: relative;
+        padding: 20px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: flex-end;
+        text-decoration: none;
+        border: 4px solid #b0215e;
+        margin-bottom: 20px;
+        background-image: url('https://bootcamp.sts.ro/wp-content/uploads/2022/08/36f00ef8e3a0d73145f8aa477e543c35.jpg');
+        background-size: cover;
+        color: black;
+        @include media {
+            height: 500px;
+        }
+    }
+
+    
+    .inner {
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: white;
+        box-sizing: border-box;
+        padding: 20px;
+        opacity: 0.5;
+        font-weight: bolder;
+        @include media {
+            width: 50%;
+            height: 100%;
+        }
+    }
+    
+
+    .title {
+        font-size: 24px;
+        text-align: center;
+        font-weight: 700;
+       color: black;
+        text-shadow: 0px 2px 2px #a6f8d5;
+        position: relative;
+        margin: 0 0 20px 0;
+
+        @include media {
+            font-size: 30px;
+        }
+    }
+
+    .subtitle {
+         color: black;
+        text-align: center;
+    }
+
+    .card2 {
+        background-image: url('https://bootcamp.sts.ro/wp-content/uploads/2022/08/3de3947e5bbcd2944e02a0c81938c1ca.jpg');
+    }
+    .card3{
+        background-image: url("https://bootcamp.sts.ro/wp-content/uploads/2022/08/f68e34bd5251eb7243f6f69f42798d44.jpg");
+    }
+
+    .card4 {
+        background-image: url('https://bootcamp.sts.ro/wp-content/uploads/2022/08/ef97cbc0cd03b4a37b3a91d4bf2e3fa2.jpg');
+    }
+</style>
+
+<a href="https://bootcamp.sts.ro/exercitiu-practic-pentru-implementarea-unei-arhitecturi-de-servicii-integrate/"
+    class="card">
+    <div class="inner">
+        <h2 class="title">RSA Basics</h2>
+        <p>Maths + Encryption/Decryption + Signing/Verifying + Security Games</p>
+    </div>
+</a>
+
+<a href="https://bootcamp.sts.ro/exercitiu-practic-pentru-implementarea-unei-arhitecturi-de-servicii-integrate/"
+    class="card card2">
+    <div class="inner">
+        <h2 class="title">Forensics</h2>
+        <p>Network + File Forensics + Pentest in BurpSuite pe vulnerabilitate plugin WordPress</p>
+    </div>
+</a>
+<a href="https://bootcamp.sts.ro/exercitiu-practic-pentru-implementarea-unei-arhitecturi-de-servicii-integrate/"
+    class="card card3">
+    <div class="inner">
+        <h2 class="title">Info Sec</h2>
+        <p>Group Policy Management + Reguli/Bune practici de trust</p>
+    </div>
+</a>
+
+<a href="https://bootcamp.sts.ro/exercitiu-practic-pentru-implementarea-unei-arhitecturi-de-servicii-integrate/"
+    class="card card4">
+    <div class="inner">
+        <h2 class="title">Platforma NG 112</h2>
+        <p>Arhitectura + Tehnologii + Demo Call 112 + Discutii extindere + Quiz la care nu am vazut la tabla</p>
+    </div>
+</a> -->
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    * {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: #131313;
+    }
+
+    .container {
+        position: relative;
+    }
+
+    .container .card {
+        position: relative;
+        width: 320px;
+        height: 450px;
+        background: #232323;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    .container .card:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgb(40, 140, 255);
+        clip-path: circle(150px at 80% 20%);
+        transition: 0.5s ease-in-out;
+    }
+
+    .container .card:hover:before {
+        clip-path: circle(300px at 80% -20%);
+    }
+
+    .container .card:after {
+        content: 'Nike';
+        position: absolute;
+        top: 30%;
+        left: -20%;
+        font-size: 12em;
+        font-weight: 800;
+        font-style: italic;
+        color: rgba(18, 129, 255, 0.248)
+    }
+
+    .container .card .imgBx {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10000;
+        width: 100%;
+        height: 220px;
+        transition: 0.5s;
+        border-radius: 20px;
+    }
+
+    .container .card:hover .imgBx {
+        top: 0%;
+        transform: translateY(0%);
+
+    }
+
+    .container .card .imgBx img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-25deg);
+        width: 270px;
+    }
+
+    .container .card .contentBx {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 100px;
+        text-align: center;
+        transition: 1s;
+        z-index: 10;
+    }
+
+    .container .card:hover .contentBx {
+        height: 210px;
+    }
+
+    .container .card .contentBx h2 {
+        position: relative;
+        font-weight: 600;
+        letter-spacing: 1px;
+        color: #fff;
+        margin: 0;
+    }
+
+    .container .card .contentBx .size,
+    .container .card .contentBx .color {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 8px 20px;
+        transition: 0.5s;
+        opacity: 0;
+        visibility: hidden;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .container .card:hover .contentBx .size {
+        opacity: 1;
+        visibility: visible;
+        transition-delay: 0.5s;
+    }
+
+    .container .card:hover .contentBx .color {
+        opacity: 1;
+        visibility: visible;
+        transition-delay: 0.6s;
+    }
+
+    .container .card .contentBx .size h3,
+    .container .card .contentBx .color h3 {
+        color: #fff;
+        font-weight: 300;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-right: 10px;
+    }
+
+    .container .card .contentBx .size span {
+        width: 26px;
+        height: 26px;
+        text-align: center;
+        line-height: 26px;
+        font-size: 14px;
+        display: inline-block;
+        color: #111;
+        background: #fff;
+        margin: 0 5px;
+        transition: 0.5s;
+        color: #111;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .container .card .contentBx .size span:hover {
+        background: #9bdc28;
+    }
+
+    .container .card .contentBx .color span {
+        width: 20px;
+        height: 20px;
+        background: #ff0;
+        border-radius: 50%;
+        margin: 0 5px;
+        cursor: pointer;
+    }
+
+    .container .card .contentBx .color span:nth-child(2) {
+        background: #9bdc28;
+    }
+
+    .container .card .contentBx .color span:nth-child(3) {
+        background: #03a9f4;
+    }
+
+    .container .card .contentBx .color span:nth-child(4) {
+        background: #e91e63;
+    }
+
+    .container .card .contentBx a {
+        display: inline-block;
+        padding: 10px 20px;
+        background: #fff;
+        border-radius: 4px;
+        margin-top: 10px;
+        text-decoration: none;
+        font-weight: 600;
+        color: #111;
+        opacity: 0;
+        transform: translateY(50px);
+        transition: 0.5s;
+        margin-top: 0;
+    }
+
+    .container .card:hover .contentBx a {
+        opacity: 1;
+        transform: translateY(0px);
+        transition-delay: 0.75s;
+
+    }
+</style>
+<div class="container">
+    <div class="card">
+        <div class="imgBx">
+            <img src="https://bootcamp.sts.ro/wp-content/uploads/2022/08/c81e728d9d4c2f636f067f89cc14862c-scaled.jpg">
+        </div>
+        <div class="contentBx">
+            <h2>Data Center</h2>
+            <div class="size">
+                <h3>Continut:</h3>
+                <span>Servere</span>
+                <span>Coolere</span>
+                <span>Alimentatoare</span>
+                <span>Durere de cap</span>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="container">
+    <div class="card">
+        <div class="imgBx">
+            <img src="https://bootcamp.sts.ro/wp-content/uploads/2022/08/c81e728d9d4c2f636f067f89cc14862c-scaled.jpg">
+        </div>
+
+        <div class="contentBx">
+            <h2>Servicii de comunicatii:</h2>
+            <div class="size">
+                <span>Prezentare infrastructura</span>
+                <span>Configurare echipamente date-voce-video</span>
+                <span>Securitate</span>
+            </div>
+        </div>
+
+    </div>
+</div>

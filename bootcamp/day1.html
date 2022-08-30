@@ -1,0 +1,220 @@
+<style>
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    html,
+    body {
+        height: 100%;
+    }
+
+    body {
+        margin: 0;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        height: 100%;
+        color: #f4f7f7;
+
+        font: 1rem/1 'Cabin', sans-serif;
+        overflow-x: hidden;
+    }
+
+    input {
+        position: absolute;
+        width: 1px;
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .selector {
+        display: grid;
+        grid-template-areas:
+            'happy lovers'
+            'pick  pick';
+    }
+
+    label {
+        display: block;
+        cursor: pointer;
+    }
+
+    .happy-card,
+    .lovers-card {
+        position: relative;
+        width: 500px;
+        padding: 40px;
+        color: #586875;
+        background-color: #f4f7f7;
+        box-shadow: 0 10px 20px #0006;
+        animation-duration: 0.5s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+    }
+
+    .happy-card {
+        background-size: cover;
+        background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("https://bootcamp.sts.ro/wp-content/uploads/2022/08/c12eea22b675869ef76a3d456970621d.jpg");
+        grid-area: happy;
+        margin-right: -10px;
+        --swing: -25px;
+        --overlap: 25px;
+    }
+
+    .lovers-card {
+        background-size: cover;
+        background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("https://bootcamp.sts.ro/wp-content/uploads/2022/08/6fc9e83f4647c6ea93d24712c88af564.jpg");
+        grid-area: lovers;
+        margin-left: -10px;
+        --swing: 25px;
+        --overlap: -25px;
+    }
+
+    #happy-radio:checked~.selector .happy-card,
+    #lovers-radio:checked~.selector .lovers-card {
+        animation-name: swing-forwards;
+    }
+
+    @keyframes swing-forwards {
+        0% {
+            z-index: 1;
+            transform: scale(0.9);
+        }
+
+        50% {
+            transform: translateX(var(--swing));
+        }
+
+        100% {
+            z-index: 2;
+            transform: translateX(var(--overlap)) scale(1.1);
+        }
+    }
+
+    #happy-radio:checked~.selector .lovers-card,
+    #lovers-radio:checked~.selector .happy-card {
+        animation-name: swing-backwards;
+    }
+
+    @keyframes swing-backwards {
+        0% {
+            z-index: 2;
+            transform: translateX(var(--overlap)) scale(1.1);
+        }
+
+        50% {
+            transform: translateX(var(--swing));
+        }
+
+        100% {
+            z-index: 1;
+            transform: scale(0.9);
+        }
+    }
+
+    h1 {
+        margin: 0;
+        padding-bottom: 10px;
+        border-bottom: 1px dashed #bdd6d2;
+        font-size: 1rem;
+    }
+
+    ul {
+        font-size: 0.9rem;
+        margin: 15px 0;
+        padding-left: 30px;
+        line-height: 1.5rem;
+        list-style-type: square;
+    }
+
+    p {
+        margin: 0 -20px -20px;
+        padding: 15px;
+        background-color: #e8f9f617;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .happy-pick,
+    .lovers-pick {
+        grid-area: pick;
+        margin: 50px auto 0;
+        padding: 15px;
+        border: 1px solid #f4f7f7;
+        border-radius: 9999px;
+        background-color: #8dcad49a;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+
+    .happy-pick::before,
+    .lovers-pick::after {
+        display: inline-block;
+        font-family: 'Font Awesome 5 Free';
+        font-weight: bold;
+    }
+
+    .happy-pick::before {
+        margin-right: 10px;
+    }
+
+    .lovers-pick::after {
+        margin-left: 10px;
+    }
+
+
+    #happy-radio:checked~.selector .happy-pick {
+        display: none;
+    }
+
+
+    #lovers-radio:checked~.selector .lovers-pick {
+        display: none;
+    }
+
+    @media (max-width: 560px) {
+        .happy-card {
+            margin-right: -85px;
+            --swing: -100px;
+        }
+
+        .lovers-card {
+            margin-left: -85px;
+            --swing: 100px;
+        }
+    }
+</style>
+
+
+<div>
+    <input type="radio" name="sushi-lunch" id="happy-radio">
+    <input type="radio" name="sushi-lunch" id="lovers-radio" checked>
+
+    <div class="selector">
+        <label for="happy-radio" class="happy-card">
+            <h1>Prezentare Centre: CORIS + NOC</h1>
+            <ul>
+                Disclaimer: daca parem nedumeriti, chiar eram; daca paream interesati, eram doar confuzi
+
+            </ul>
+            <p>Flux de date STS -> noi</p>
+        </label>
+
+        <label for="lovers-radio" class="lovers-card">
+            <h1>Prezentare NOC</h1>
+            <ul>
+                Disclaimer: in comunicarea din reteaua noi-STS nu a existat niciun firewall care sa filtreze traficul de
+                date, ci s-a bazat pe sinceritate si incredere. Cu toate acestea, pentru a preveni leak-uri nedorite de
+                date de la acest site catre utilizatori malitiosi, un dispozitiv de acest tip a fost instalat acum.
+
+            </ul>
+            <p>Flux de date noi -> STS</p>
+        </label>
+
+        <label for="happy-radio" class="happy-pick">Switch to Bucharest!</label>
+        <label for="lovers-radio" class="lovers-pick">Switch to Cristian!</label>
+    </div>
+</div>

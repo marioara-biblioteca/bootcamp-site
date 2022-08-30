@@ -1,0 +1,118 @@
+<style>
+    @mixin media() {
+        @media (min-width: 768px) {
+            @content;
+        }
+    }
+
+    .siteTitle {
+        display: block;
+        font-weight: 900;
+        font-size: 30px;
+        margin: 20px 0;
+
+        @include media {
+            font-size: 60px;
+        }
+    }
+
+
+    .card {
+        height: 400px;
+        position: relative;
+        padding: 20px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: flex-end;
+        text-decoration: none;
+        border: 4px solid #b0215e;
+        margin-bottom: 20px;
+        background-image: url('https://bootcamp.sts.ro/wp-content/uploads/2022/08/36f00ef8e3a0d73145f8aa477e543c35.jpg');
+        background-size: cover;
+
+        @include media {
+            height: 500px;
+        }
+    }
+
+
+    .inner {
+        color: black;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: white;
+        box-sizing: border-box;
+        padding: 20px;
+        opacity: 0.5;
+        font-weight: bolder;
+
+        @include media {
+            width: 50%;
+            height: 100%;
+        }
+    }
+
+
+    .title {
+        font-size: 24px;
+        text-align: center;
+        font-weight: 700;
+        text-shadow: 0px 2px 2px #a6f8d5;
+        position: relative;
+        margin: 0 0 20px 0;
+
+        @include media {
+            font-size: 30px;
+        }
+    }
+
+    .subtitle {
+        text-align: center;
+    }
+
+    .card2 {
+        background-image: url('https://bootcamp.sts.ro/wp-content/uploads/2022/08/3de3947e5bbcd2944e02a0c81938c1ca.jpg');
+    }
+
+    .card3 {
+        background-image: url("https://bootcamp.sts.ro/wp-content/uploads/2022/08/f68e34bd5251eb7243f6f69f42798d44.jpg");
+    }
+
+    .card4 {
+        background-image: url('https://bootcamp.sts.ro/wp-content/uploads/2022/08/ef97cbc0cd03b4a37b3a91d4bf2e3fa2.jpg');
+    }
+</style>
+
+<a href="https://bootcamp.sts.ro/exercitiu-practic-pentru-implementarea-unei-arhitecturi-de-servicii-integrate/"
+    class="card">
+    <div class="inner">
+        <h2 class="title">RSA Basics</h2>
+        <p>Maths + Encryption/Decryption + Signing/Verifying + Security Games</p>
+    </div>
+</a>
+
+<a href="https://bootcamp.sts.ro/exercitiu-practic-pentru-implementarea-unei-arhitecturi-de-servicii-integrate/"
+    class="card card2">
+    <div class="inner">
+        <h2 class="title">Forensics</h2>
+        <p>Network + File Forensics + Pentest in BurpSuite pe vulnerabilitate plugin WordPress</p>
+    </div>
+</a>
+<a href="https://bootcamp.sts.ro/exercitiu-practic-pentru-implementarea-unei-arhitecturi-de-servicii-integrate/"
+    class="card card3">
+    <div class="inner">
+        <h2 class="title">Info Sec</h2>
+        <p>Group Policy Management + Reguli/Bune practici de trust</p>
+    </div>
+</a>
+
+<a href="https://bootcamp.sts.ro/exercitiu-practic-pentru-implementarea-unei-arhitecturi-de-servicii-integrate/"
+    class="card card4">
+    <div class="inner">
+        <h2 class="title">Platforma NG 112</h2>
+        <p>Arhitectura + Tehnologii + Demo Call 112 + Discutii extindere + Quiz la care nu am vazut la tabla</p>
+    </div>
+</a>

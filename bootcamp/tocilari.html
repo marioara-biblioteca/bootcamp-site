@@ -1,0 +1,419 @@
+<style>
+    .hello {
+        opacity: 1 !important;
+    }
+
+    .full {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+
+    .full .content {
+        background-color: rgba(0, 0, 0, 0.75) !important;
+        height: 100%;
+        width: 100%;
+        display: grid;
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .full .content img {
+        left: 50%;
+        transform: translate3d(0, 0, 0);
+        animation: zoomin 1s ease;
+        max-width: 100%;
+        max-height: 100%;
+        margin: auto;
+    }
+
+    p {
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin: 10%;
+    }
+
+    .byebye {
+        opacity: 0;
+    }
+
+    .byebye:hover {
+        transform: scale(0.2) !important;
+    }
+
+    .gallery {
+        display: grid;
+        grid-column-gap: 8px;
+        grid-row-gap: 8px;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-auto-rows: 8px;
+    }
+
+    .gallery img {
+        max-width: 100%;
+        border-radius: 8px;
+        box-shadow: 0 0 16px #333;
+        transition: all 1.5s ease;
+    }
+
+    .gallery img:hover {
+        box-shadow: 0 0 32px #333;
+    }
+
+    .gallery .content {
+        padding: 4px;
+    }
+
+    .gallery .gallery-item {
+        transition: grid-row-start 300ms linear;
+        transition: transform 300ms ease;
+        transition: all 0.5s ease;
+        cursor: pointer;
+    }
+
+    .gallery .gallery-item:hover {
+        transform: scale(1.025);
+    }
+
+    @media (max-width: 600px) {
+        .gallery {
+            grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+        }
+    }
+
+    @media (max-width: 400px) {
+        .gallery {
+            grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+        }
+    }
+
+    @-moz-keyframes zoomin {
+        0% {
+            max-width: 50%;
+            transform: rotate(-30deg);
+            filter: blur(4px);
+        }
+
+        30% {
+            filter: blur(4px);
+            transform: rotate(-80deg);
+        }
+
+        70% {
+            max-width: 50%;
+            transform: rotate(45deg);
+        }
+
+        100% {
+            max-width: 100%;
+            transform: rotate(0deg);
+        }
+    }
+
+    @-webkit-keyframes zoomin {
+        0% {
+            max-width: 50%;
+            transform: rotate(-30deg);
+            filter: blur(4px);
+        }
+
+        30% {
+            filter: blur(4px);
+            transform: rotate(-80deg);
+        }
+
+        70% {
+            max-width: 50%;
+            transform: rotate(45deg);
+        }
+
+        100% {
+            max-width: 100%;
+            transform: rotate(0deg);
+        }
+    }
+
+    @-o-keyframes zoomin {
+        0% {
+            max-width: 50%;
+            transform: rotate(-30deg);
+            filter: blur(4px);
+        }
+
+        30% {
+            filter: blur(4px);
+            transform: rotate(-80deg);
+        }
+
+        70% {
+            max-width: 50%;
+            transform: rotate(45deg);
+        }
+
+        100% {
+            max-width: 100%;
+            transform: rotate(0deg);
+        }
+    }
+
+    @keyframes zoomin {
+        0% {
+            max-width: 50%;
+            transform: rotate(-30deg);
+            filter: blur(4px);
+        }
+
+        30% {
+            filter: blur(4px);
+            transform: rotate(-80deg);
+        }
+
+        70% {
+            max-width: 50%;
+            transform: rotate(45deg);
+        }
+
+        100% {
+            max-width: 100%;
+            transform: rotate(0deg);
+        }
+    }
+</style>
+
+<h1>Masonry Gallery</h1>
+
+<div class="gallery" id="gallery">
+    <div class="gallery-item">
+        <div class="content">
+            <p> Ne-am dat pe tiroliana</p><img
+                src="https://bootcamp.sts.ro/wp-content/uploads/2022/08/aab3238922bcc25a6f606eb525ffdc56-scaled.jpg"
+                alt="">
+        </div>
+    </div>
+    <div class="gallery-item">
+        <div class="content">
+            <p> Am desenat</p><img
+                src="https://bootcamp.sts.ro/wp-content/uploads/2022/08/3961f1e4a3dd9f9292b89330e5022ee2-scaled.jpg"
+                alt="">
+        </div>
+    </div>
+    <div class="gallery-item">
+        <div class="content">
+            <p> Am facut avioane de hartie</p><img
+                src="https://bootcamp.sts.ro/wp-content/uploads/2022/08/e0946c4668df7f6e6440d6fb41df0417-scaled.jpg"
+                alt="">
+        </div>
+    </div>
+    <div class="gallery-item">
+        <div class="content">
+            <p> Si echipe misto</p><img
+                src="https://bootcamp.sts.ro/wp-content/uploads/2022/08/5371887788e134ec4ad54be850622acb-scaled.jpg"
+                alt="">
+        </div>
+    </div>
+    <div class="gallery-item">
+        <div class="content">
+            <p> Am escaladat stanci</p><img
+                src="https://bootcamp.sts.ro/wp-content/uploads/2022/08/c20ad4d76fe97759aa27a0c99bff6710-scaled.jpg"
+                alt="">
+        </div>
+    </div>
+    <div class="gallery-item">
+        <div class="content">
+            <p> Am fost la party</p><img
+                src="https://photos.google.com/share/AF1QipPqng3VO7hbJNiva9yVjHqy7welN0iBBbVKNnOYdOUF_kw1yhyJv-g8VmZV-wAxzg/photo/AF1QipNFoB_8hkKIcfvIqBdgzMrrIxYvppCJe0o4jWGL?key=TmlYZkhXRHVtd0dxVzFsMUp0NzVUVUI0bWZJbDN3"
+                alt="">
+        </div>
+    </div>
+    <div class="gallery-item">
+        <div class="content">
+            <p> Ne-am jucat cu ochelari VR</p><img
+                src="http://drive.google.com/uc?export=view&id=1RvcFh-_dpEDxo7cSb6MYBJ7bGr8zCv5N" alt="">
+        </div>
+    </div>
+    <div class="gallery-item">
+        <div class="content">
+            <p> Am fost la alergat </p><img
+                src="http://drive.google.com/uc?export=view&id=1IamYaF-lAnI3iutbDa9Xa8d3Foyqgpri" alt="">
+        </div>
+    </div>
+    <div class="gallery-item">
+        <div class="content">
+            <p> Am facut concurs de tageri</p><img
+                src="https://static.turbosquid.com/Preview/2020/04/24__04_13_31/001.jpgCE839861-7E37-4850-A2A2-3086270791F2Large.jpg"
+                alt="">
+        </div>
+    </div>
+    <div class="gallery-item">
+        <div class="content">
+            <p>Am vizitat</p><img src="http://drive.google.com/uc?export=view&id=1cib_0I34IK1BtU-9DAzBdBdRpgr7xw_3"
+                alt="">
+        </div>
+    </div>
+    <div class="gallery-item">
+        <div class="content">
+            <p>Am avut colegi talentati</p><img
+                src="http://drive.google.com/uc?export=view&id=1apoNiyLxg_ns6qfTjXnDANSdOsdsjE5c" alt="">
+        </div>
+    </div>
+    <div class="gallery-item">
+        <div class="content">
+            <p> Ne-am ofticat la jocuri</p><img
+                src="http://drive.google.com/uc?export=view&id=1zM66mJzQ1qjbS01cP-RDkzl6e2eMC76J" alt="">
+        </div>
+    </div>
+
+</div>
+
+
+<script>
+    var gallery = document.querySelector('#gallery');
+    var getVal = function (elem, style) { return parseInt(window.getComputedStyle(elem).getPropertyValue(style)); };
+    var getHeight = function (item) { return item.querySelector('.content').getBoundingClientRect().height; };
+    var resizeAll = function () {
+        var altura = getVal(gallery, 'grid-auto-rows');
+        var gap = getVal(gallery, 'grid-row-gap');
+        gallery.querySelectorAll('.gallery-item').forEach(function (item) {
+            var el = item;
+            el.style.gridRowEnd = "span " + Math.ceil((getHeight(item) + gap) / (altura + gap));
+        });
+    };
+    gallery.querySelectorAll('img').forEach(function (item) {
+        item.classList.add('byebye');
+        if (item.complete) {
+            console.log(item.src);
+        }
+        else {
+            item.addEventListener('load', function () {
+                var altura = getVal(gallery, 'grid-auto-rows');
+                var gap = getVal(gallery, 'grid-row-gap');
+                var gitem = item.parentElement.parentElement;
+                gitem.style.gridRowEnd = "span " + Math.ceil((getHeight(gitem) + gap) / (altura + gap));
+                item.classList.remove('byebye');
+            });
+        }
+    });
+    window.addEventListener('resize', resizeAll);
+    gallery.querySelectorAll('.gallery-item').forEach(function (item) {
+        item.addEventListener('click', function () {
+            item.classList.toggle('full');
+        });
+    });
+
+</script>
+
+
+<!-- Us -->
+<!-- proiect esuat ca nu se incarcau iconitele -->
+<!-- <style>
+    @import url("//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
+
+    body {
+        background-color: #eee;
+    }
+
+    .footer-social-links {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 20%;
+    }
+
+    .footer-social-links a {
+        width: 25px;
+        height: 25px;
+        line-height: 25px !important;
+        position: relative;
+        margin: 0 5px;
+        text-align: center;
+        display: inline-block;
+        color: #111;
+
+        -webkit-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+        -moz-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+        -o-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+        -ms-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+        transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+    }
+
+    .footer-social-links a i,
+    .footer-social-links a span {
+        position: relative;
+        top: 2px;
+        left: 1px;
+    }
+
+    .footer-social-links a:before {
+        content: "";
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: 1px solid #111;
+
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        border-radius: 2px;
+
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+
+        -webkit-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+        -moz-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+        -o-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+        -ms-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+        transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+
+    }
+
+    .footer-social-links a:hover {
+        color: #fff;
+    }
+
+    .footer-social-links a:hover:before {
+        background: #111;
+    }
+</style>
+<div class="footer-social-links">
+    <a href="https://bootcamp.sts.ro/alexe-gabriel-nicolae/" title="gabi" target="_blank"><i
+            class="fa-solid fa-g"></i></a>
+    <a href="https://bootcamp.sts.ro/banu-teodora/" title="teo" target="_blank"><i class="fa-solid fa-t"></i></a>
+    <a href="https://bootcamp.sts.ro/boerescu-victorita-maria/" title="viki" target="_blank"><i
+            class="fa-solid fa-v"></i></a>
+    <a href="https://bootcamp.sts.ro/brebeanu-andrei-cristian/" title="andrei" target="_blank"><i
+            class="fa-solid fa-a"></i></a>
+    <a href="https://bootcamp.sts.ro/luca-silviu-catalin/" title="catalin" target="_blank"><i
+            class="fa-solid fa-c"></i></a>
+    <a href="https://bootcamp.sts.ro/magirescu-stefan/" title="stefan" target="_blank"><i class="fa-solid fa-s"></i></a>
+</div>
+<div class="footer-social-links">
+    <a href="https://bootcamp.sts.ro/micu-sergiu-george/" title="sergiu" target="_blank"><i
+            class="fa-solid fa-s"></i></a>
+    <a href="https://bootcamp.sts.ro/pantazi-daniel/" title="daniel" target="_blank"><i class="fa-solid fa-d"></i></a>
+    <a href="https://bootcamp.sts.ro/popescu-bianca-elena/" title="bianca" target="_blank"><i
+            class="fa-solid fa-b"></i></a>
+    <a href="https://bootcamp.sts.ro/evtei-andrei-alexandru/" title="alex" target="_blank"><i
+            class="fa-solid fa-a"></i></a>
+    <a href="https://bootcamp.sts.ro/popovici-radu-stefan/" title="radu1" target="_blank"><i
+            class="fa-solid fa-r"></i></a>
+    <a href="https://bootcamp.sts.ro/preda-oana-nicoleta/" title="oana" target="_blank"><i
+            class="fa-solid fa-o"></i></a>
+</div>
+<div class="footer-social-links">
+    <a href="https://bootcamp.sts.ro/prisacariu-adelin/" title="adelin" target="_blank"><i
+            class="fa-solid fa-a"></i></a>
+    <a href="https://bootcamp.sts.ro/radu-florian-sava/" title="radu2" target="_blank"><i class="fa-solid fa-r"></i></a>
+    <a href="https://bootcamp.sts.ro/ripan-george-iulian/" title="george" target="_blank"><i
+            class="fa-solid fa-g"></i></a>
+    <a href="https://bootcamp.sts.ro/tatu-horia-tudor/" title="horia" target="_blank"><i class="fa-solid fa-h"></i></a>
+    <a href="https://bootcamp.sts.ro/buzatu-andrada-gabriela/" title="andra" target="_blank"><i
+            class="fa-solid fa-a"></i></a>
+    <a href="https://bootcamp.sts.ro/valeca-cristiana/" title="eu" target="_blank"><i class="fa-solid fa-c"></i></a>
+</div> -->
